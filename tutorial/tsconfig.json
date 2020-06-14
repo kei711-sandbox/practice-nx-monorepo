@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@tutorial/data": ["libs/data/src/index.ts"]
+      "@tutorial/data": ["libs/data/src/index.ts"],
+      "@tutorial/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
