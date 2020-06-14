@@ -1,10 +1,7 @@
 import { Express } from 'express';
+import { Todo } from '@tutorial/data';
 
-interface Todos {
-  title: string;
-}
-
-const todos: Todos[] = [{ title: 'Todo 1' }, { title: 'Todo 2' }];
+const todos: Todo[] = [{ title: 'Todo 1' }, { title: 'Todo 2' }];
 
 export function addTodoRoutes(app: Express) {
   app.get('/api/todos', (req, res) => res.send(todos));
